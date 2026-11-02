@@ -1,3 +1,7 @@
+#1. The most surprising thing was that a Python list can hold different types of data at once, like numbers and text together, which an Excel column doesn’t normally do.
+#2. In my sales report lab, I put all the sales amounts in a list and used a loop to get the sum, average, and max in one run, instead of rebuilding formulas in Excel every time the numbers changed.
+
+
 print("--- Exercise 1: Build the list ---")
 inventory = ["pen", "notebook", "eraser", "pencil", "marker", "tape"]
 print(inventory)
