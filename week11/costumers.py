@@ -1,3 +1,15 @@
+# 1. I use bracket notation (my_dict["key"]) when the key MUST exist, like a required
+#    column or config value, because a KeyError tells me right away that something is
+#    wrong with my data. I use .get("key", default) when the key might legitimately be
+#    missing, like optional fields or counting items I haven't seen yet. My rule of
+#    thumb: if a missing key is a bug, use brackets; if it's expected, use .get().
+#
+# 2. Building a summary dictionary with a loop reminds me of making a PivotTable or
+#    using SUMIF/COUNTIF in Excel, where you group rows by a category and total them
+#    up. The Python version is more useful for large datasets because it handles
+#    millions of rows without freezing, it's repeatable by rerunning the script, and
+#    the logic is written out in code instead of buried in cell formulas.
+
 print("--- Exercise 1_---")
 customer = {
     "name": "Alice",
